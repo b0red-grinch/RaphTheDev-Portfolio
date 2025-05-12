@@ -8,41 +8,47 @@ import { JobImages } from "@/components/JobImages";
 
 const jobs = [
     {
-        role: "Senior Full-Stack Developer", // TODO: Replace with actual role
-        company: "Tech Innovators Inc.", // TODO: Replace with actual company name
+        role: "Junior Backend Developer", // TODO: Replace with actual role
+        company: "Good Thing co", // TODO: Replace with actual company name
         logo: "/company.svg", // TODO: Replace with actual logo
-        duration: "2020 - Present",
-        description:
-            "Lead developer for multiple high-impact projects, mentoring junior developers, and implementing best practices.",
+        duration: "2024 - Present",
+        description: [
+            "* Assisted in the development of scalable APIs for handling product listing, inventory management, payment processes, and logistics of an ecommerce store",
+            "* Programmed automations to enhance customer conversion with abandoned carts emailalerts using CRON + RabbitMQ",
+            "* Integrated with FlowDesk to allow for programmatic delivery of marketing emailstrigger email sequences when a user performs specific actions",
+            "* Built RESTful APIs to provide comprehensive analytics and metrics for tracking the performance of products",
+            "* Developed an API service to manage orders and inventory, and view salesmetrics",
+            "* Collaborated with other team members to brainstorm feature implementations and withFrontend Engineers to facilitate the smooth integrations of endpoints",
+        ],
         link: "https://techinnovators.com",
         images: [],
     },
-    {
-        role: "Senior Full-Stack Developer", // TODO: Replace with actual role
-        company: "Tech Innovators Inc.", // TODO: Replace with actual company name
-        logo: "/company.svg", // TODO: Replace with actual logo
-        duration: "2018 - 2020",
-        description:
-            "Developed and maintained various client projects, focusing on responsive design and performance optimization.",
-        link: "https://websolutions.com",
-        images: [
-            "/devvault.png",
-            "/devvault.png",
-        ],
-    },
-    {
-        role: "Senior Full-Stack Developer", // TODO: Replace with actual role
-        company: "Tech Innovators Inc.", // TODO: Replace with actual company name
-        logo: "/company.svg", // TODO: Replace with actual logo
-        duration: "2016 - 2018",
-        description:
-            "Assisted in the development of web applications, gained experience in agile methodologies and version control.",
-        link: "https://startupventures.com",
-        images: [
-            "/devvault.png",
-            "/devvault.png",
-        ],
-    },
+    // {
+    //     role: "Senior Full-Stack Developer", // TODO: Replace with actual role
+    //     company: "Tech Innovators Inc.", // TODO: Replace with actual company name
+    //     logo: "/company.svg", // TODO: Replace with actual logo
+    //     duration: "2018 - 2020",
+    //     description:
+    //         "Developed and maintained various client projects, focusing on responsive design and performance optimization.",
+    //     link: "https://websolutions.com",
+    //     images: [
+    //         "/devvault.png",
+    //         "/devvault.png",
+    //     ],
+    // },
+    // {
+    //     role: "Senior Full-Stack Developer", // TODO: Replace with actual role
+    //     company: "Tech Innovators Inc.", // TODO: Replace with actual company name
+    //     logo: "/company.svg", // TODO: Replace with actual logo
+    //     duration: "2016 - 2018",
+    //     description:
+    //         "Assisted in the development of web applications, gained experience in agile methodologies and version control.",
+    //     link: "https://startupventures.com",
+    //     images: [
+    //         "/devvault.png",
+    //         "/devvault.png",
+    //     ],
+    // },
 ]
 
 export const Experience = () => {
@@ -76,7 +82,9 @@ export const Experience = () => {
                                     <CalendarDays className="size-3 mr-2"/>
                                     {j.duration}
                                 </p>
-                                <p className="text-sm mt-2">{j.description}</p>
+                                <p className="text-sm mt-2">{j.description.map((description:string, index:number)=> (
+                                    <div key={index}> {description} </div>
+                                ))}</p>
                                 {/* Job Images */}
                                 <JobImages 
                                     role={j.role} 

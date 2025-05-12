@@ -8,28 +8,28 @@ import { Card, CardContent } from "@/components/ui/card";
 export const projects = [
     {
         title: "E-commerce Platform",
-        description: "A full-stack e-commerce solution with React, Node.js, and MongoDB",
+        description: "A full-stack e-commerce solution with React, Node.js, Graphql, and Stripe payment Integration",
         tech: "React",
-        link: "#",
+        link: "https://crwn-clothing-two-liart.vercel.app/",
     },
-    {
-        title: "Task Management App",
-        description: "A productivity app built with React Native and Firebase",
-        tech: "React Native",
-        link: "#",
-    },
-    {
-        title: "Data Visualization Dashboard",
-        description: "An interactive dashboard using D3.js and Vue.js",
-        tech: "Vue.js",
-        link: "#",
-    },
-    {
-        title: "AI Chatbot",
-        description: "A machine learning powered chatbot using Python and TensorFlow",
-        tech: "Python",
-        link: "#",
-    },
+    // {
+    //     title: "Task Management App",
+    //     description: "A productivity app built with React Native and Firebase",
+    //     tech: "React Native",
+    //     link: "#",
+    // },
+    // {
+    //     title: "Data Visualization Dashboard",
+    //     description: "An interactive dashboard using D3.js and Vue.js",
+    //     tech: "Vue.js",
+    //     link: "#",
+    // },
+    // {
+    //     title: "AI Chatbot",
+    //     description: "A machine learning powered chatbot using Python and TensorFlow",
+    //     tech: "Python",
+    //     link: "#",
+    // },
 ]
 
 const techColors = {
@@ -73,6 +73,7 @@ export const Projects = () => {
                                     </div>
                                     <Link
                                         href={p.link}
+                                        target="_blank"
                                         className="flex items-center gap-2 text-sm text-primary hover:underline"
                                     >
                                         View Project
