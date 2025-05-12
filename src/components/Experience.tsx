@@ -8,16 +8,20 @@ import { JobImages } from "@/components/JobImages";
 
 const jobs = [
     {
-        role: "Junior Backend Developer", // TODO: Replace with actual role
+        role: "Backend Developer", // TODO: Replace with actual role
         company: "Good Thing co", // TODO: Replace with actual company name
         logo: "/company.svg", // TODO: Replace with actual logo
         duration: "2024 - Present",
         description: [
+            "* Collaborated with other developers to build API microservices for an e-commerce app using Node-Express, MongoDB, and TypeScript.",
             "* Assisted in the development of scalable APIs for handling product listing, inventory management, payment processes, and logistics of an ecommerce store",
-            "* Programmed automations to enhance customer conversion with abandoned carts emailalerts using CRON + RabbitMQ",
-            "* Integrated with FlowDesk to allow for programmatic delivery of marketing emailstrigger email sequences when a user performs specific actions",
-            "* Built RESTful APIs to provide comprehensive analytics and metrics for tracking the performance of products",
-            "* Developed an API service to manage orders and inventory, and view salesmetrics",
+            "* Programmed automations to enhance customer conversion with abandoned carts and birthday email alerts using CRON + RabbitMQ",
+            "* Integrated with Flowdesk to programmatically add new users to newsletters for email marketing endeavors",
+            "* Contributed to the development of an admin API service for enabling the operations team to manage products and inventory",
+            "* Computed comprehensive analytics and metrics for tracking the performance of products using MongoDB aggregations",
+            "* Programmed automations for adding 5,000+ products listed on an Excel spreadsheet to the platform",
+            "* Developed an API service that onboarded and served 50+ local vendors",
+            "* Provided key sales metrics and analytics on the vendor API using MongoDB aggregations  ",
             "* Collaborated with other team members to brainstorm feature implementations and withFrontend Engineers to facilitate the smooth integrations of endpoints",
         ],
         link: "https://techinnovators.com",
